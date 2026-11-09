@@ -1483,6 +1483,18 @@ html{scroll-padding-top:92px}body{background:#fff8ea}h1,h2,h3{letter-spacing:-.0
   .hero .hero-kicker {padding:7px 11px;}
 }
 
+
+/* CineSpin V8.7.9 — deux ajustements d'espacement ciblés, par rapport à V8.7.8.
+   +35 % sur-titre -> titre; +50 % description -> boutons. */
+.hero .hero-kicker { margin-bottom:clamp(44.55px,5.346vw,71.28px); }
+.hero .hero-description, .hero-copy>p.hero-description { margin-bottom:clamp(36px,3.9vw,52.5px); }
+@media (max-width:720px) {
+  .hero .hero-kicker { margin-bottom:57.915px; }
+  .hero .hero-description, .hero-copy>p.hero-description { margin-bottom:36px; }
+}
+@media (max-width:400px) {
+  .hero .hero-kicker { margin-bottom:51.2325px; }
+}
 </style>
 </head><body>
 <header class="topbar" id="topbar"><div class="nav-shell">
